@@ -1,0 +1,16 @@
+kesimpulan
+ Deadlock terjadi saat thread saling menunggu resource.
+ Deadlock dapat dicegah dengan urutan lock konsisten.
+ Starvation terjadi karena pembagian CPU/resource tidak adil.
+ Sinkronisasi dan scheduling sangat penting dalam sistem operasi.
+Praktikum ini menunjukkan bahwa kesalahan manajemen resource dapat menyebabkan deadlock dan starvation sehingga sistem menjadi tidak efisien.
+
+Cara Mencegah Deadlock:
+ Resource ordering
+ Timeout lock
+ Hindari hold and wait
+ Gunakan semaphore dengan benar
+Cara Mencegah Starvation:
+ Aging
+ Round Robin
+ Fair scheduler
