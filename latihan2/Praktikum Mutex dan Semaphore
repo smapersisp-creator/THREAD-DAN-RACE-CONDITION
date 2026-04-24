@@ -1,0 +1,18 @@
+Jawaban Tugas Analisis
+1. Apa fungsi mutex?
+   Mutex berfungsi mengunci critical section agar hanya satu thread yang dapat mengakses shared resource.
+2. Mengapa hasil konsisten?
+   Karena proses increment dilakukan satu per satu.
+3. Apa keuntungan mutex?
+   Menghindari race condition
+   Menjaga data tetap konsisten
+   Aman untuk shared memory
+4. Kekurangan mutex?
+   Program bisa lebih lambat karena thread harus menunggu.
+   Jika salah penggunaan bisa deadlock.
+Kesimpulan
+  Mutex adalah teknik sinkronisasi untuk thread.
+  Mutex mencegah race condition pada shared resource.
+  Dengan mutex, hasil program selalu benar yaitu 200000.
+  Mutual exclusion sangat penting dalam sistem operasi multitasking.
+# Guna Ardiansyah
