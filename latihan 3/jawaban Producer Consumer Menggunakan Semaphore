@@ -1,0 +1,23 @@
+1. Ubah ukuran buffer menjadi 3
+   Ubah:
+   empty = Semaphore(3)
+   Dampak:
+   Buffer cepat penuh
+   Producer lebih sering menunggu
+   Blocking lebih sering terjadi
+2. Amati Perubahan Blocking
+   Dengan buffer kecil:
+   Producer tertahan saat buffer penuh
+   Consumer tetap mengambil data satu per satu
+3. Bandingkan Mutex dan Semaphore
+   Aspek	Mutex	Semaphore
+   Fungsi	Mengunci resource	Mengatur jumlah akses
+   Nilai	0 / 1	Banyak angka
+   Cocok untuk	Critical section	Buffer, producer-consumer
+   Ownership	Ada pemilik lock	Tidak
+Kesimpulan
+   Semaphore sangat cocok untuk sinkronisasi producer-consumer.
+   empty mencegah buffer penuh.
+   full mencegah buffer kosong.
+   Sistem berjalan aman dan teratur.
+Pada latihan ini dibuktikan bahwa semaphore mampu mengatur koordinasi antar thread yang saling berbagi buffer.
